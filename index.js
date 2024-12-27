@@ -7,7 +7,7 @@ const port = 3000
 app.get('/:id', (req, res) => {
 //   res.send(`Muhammad Sufiyan ! ${req.params.id}`)
  
-app.use(cors())
+app.use(cors({origin: ["http://localhost:5173/","http://localhost:3000/","https://sufiyan-ecommerce-website.surge.sh/"]}))
   res.send(
     prodcuts
 )
