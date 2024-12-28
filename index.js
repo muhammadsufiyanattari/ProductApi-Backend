@@ -4,7 +4,7 @@ import cors from "cors";
 const app = express()
 const port = 3000
 
-app.use(  cors({origin: ["http://localhost:5173/","http://localhost:3000/","https://sufiyan-ecommerce-website.surge.sh/"]})
+app.use(  cors()
 )
 app.get("/",(req,res)=>{
   res.send("Hello World")
